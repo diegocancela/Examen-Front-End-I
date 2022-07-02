@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header class="cabecera">
+    <header>
         <nav class="navbar">
             <img class="logo" src="imagenes\logo.svg" alt="Logo Manage">
             <ul class="lista">
@@ -28,18 +28,18 @@
                 <h1>Bring everyone together to build better products.</h1>
                 <p>Manage makes it simple for software teams to plan day-to-day tasks while keeping the large team goals
                     in view</p>
-                    <button class="boton-naranja" type="button">Get Started</button>
+                <button class="boton-naranja" type="button">Get Started</button>
             </article>
-            <img src="imagenes\illustration-intro.svg" alt="ilustraciones graficas">
+            <img class="ilustracion" src="imagenes\illustration-intro.svg" alt="ilustraciones graficas">
         </section>
-        <section>
-            <article>
+        <section class="aboutUs">
+            <article class="aboutUs-text">
                 <h2>What´s different about Manage?</h2>
                 <p>Manage provides all the functionality your teas needs, without the complexity. Our software is
                     tailor-made for modern digital product teams</p>
             </article>
-            <article>
-                <ul type="none">
+            <article class="aboutUs-viñetas">
+                <ul class="aboutUs-viñetas-lista" type="none">
                     <li>
                         <button>01</button>
                         <h3>Track company-wide progress</h3>
@@ -62,54 +62,79 @@
                 </ul>
             </article>
         </section>
-        <section>
+        <section class="testimonios">
             <h2>What they´ve said</h2>
-            <article>
-                <h3>Ali Bravo</h3>
-                <p>“Manage has supercharged our team´s workflow. The ability to maintain visibility on larger milestones
-                    at all times keeps everyone motivated.”</p>
-                <h3>Ali Bravo</h3>
-                <p>“We have been able to cancel so many other subscriptions since using manage. There ir no more
-                    cross-channel confusion and everyone is much more focused.”</p>
-                <h3>Ali Bravo</h3>
-                <p>“Manage allows us to provide structure and process. It keeps us organized and focused. I can´t stop
-                    recommending them to everyone i talk to!”</p>
-            </article>
-
+            <div>
+                <article class="cards">
+                    <img src="imagenes/avatar-anisha.png" alt="Anisha">
+                    <h3>Ali Bravo</h3>
+                    <p>“Manage has supercharged our team´s workflow. The ability to maintain visibility on larger
+                        milestones
+                        at all times keeps everyone motivated.”</p>
+                </article>
+                <article class="cards">
+                    <img src="imagenes/avatar-ali.png" alt="Ali">
+                    <h3>Ali Bravo</h3>
+                    <p>“We have been able to cancel so many other subscriptions since using manage. There ir no more
+                        cross-channel confusion and everyone is much more focused.”</p>
+                </article>
+                <article class="cards">
+                    <img src="imagenes/avatar-richard.png" alt="Richard">
+                    <h3>Ali Bravo</h3>
+                    <p>“Manage allows us to provide structure and process. It keeps us organized and focused. I can´t
+                        stop
+                        recommending them to everyone i talk to!”</p>
+                </article>
+            </div>
+            <button class="boton-naranja" type="button">Get Started</button>
         </section>
     </main>
     <footer>
-        <img src="imagenes\logo.svg" alt="Logo Manage" class="logo">
-        <div>
-            <ul type="none">
-                <li><a href="https://www.facebook.com/" target="_blank"><img src="imagenes\icon-facebook.svg"
-                            alt="Icono Facebook"></a></li>
-                <li><a href="https://www.youtube.com/" target="_blank"><img src="imagenes\icon-youtube.svg"
-                            alt="Icono Youtube"></a></li>
-                <li><a href="https://www.twitter.com" target="_blank"><img src="imagenes\icon-twitter.svg"
-                            alt="Icono Twitter"></a></li>
-                <li><a href="https://www.pinterest.com/" target="_blank"><img src="imagenes\icon-pinterest.svg"
-                            alt="Icono Pinterest"></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><img src="imagenes\icon-instagram.svg"
-                            alt="Icono Instagram"></a></li>
-            </ul>
+        <div class="barra-naranja">
+            <h2>Simplify hoy your team words today.</h2>
+            <button class="boton-blanco" type="button">Get Started</button>
         </div>
-        <div>
-            <ul type="none">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
+        <div class="barra-violeta">
+            <div class="logos">
+                <img src="imagenes\logo blanco.png" alt="Logo Manage" class="logo">
+                <div>
+                    <ul class="lista-redes" type="none">
+                        <li><a href="https://www.facebook.com/" target="_blank"><img src="imagenes\icon-facebook.svg"
+                                    alt="Icono Facebook"></a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank"><img src="imagenes\icon-youtube.svg"
+                                    alt="Icono Youtube"></a></li>
+                        <li><a href="https://www.twitter.com" target="_blank"><img src="imagenes\icon-twitter.svg"
+                                    alt="Icono Twitter"></a></li>
+                        <li><a href="https://www.pinterest.com/" target="_blank"><img src="imagenes\icon-pinterest.svg"
+                                    alt="Icono Pinterest"></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><img src="imagenes\icon-instagram.svg"
+                                    alt="Icono Instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="listaUno">
+                <ul type="none">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="listaDos">
+                <ul type="none">
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="formulario">
+                <form action="#" id="email" method="post">
+                    <input type="email" placeholder="Update in your inbox . . . ">
+                    <input type="submit" value="Go">
+                </form>
+                <p>Copyright 2020. All Rights Reserved</p>
+            </div>
         </div>
-        <div>
-            <ul type="none">
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
-        </div>
-
 
     </footer>
 

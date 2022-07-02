@@ -1,12 +1,20 @@
-body{
-    background-image: url(../imagenes/bg-tablet-pattern.svg) ;
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&display=swap');
+
+* {
+    font-family: 'be Vietnam', sans-serif;
+}
+
+body {
+    background-image: url(../imagenes/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    margin: 0;
 }
 
 
 header {
     margin-top: 5rem;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
 }
 
@@ -44,7 +52,7 @@ a {
     background: #F3603B;
     border: none;
     color: white;
-    box-shadow:  0px 4px 7px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
     border-radius: 3.125rem;
 }
 
@@ -52,9 +60,311 @@ main {
     margin: 3rem;
 }
 
-.home{
-    
+.home {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-home {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2rem;
+    width: 39%;
+}
+
+.home .text-home h1 {
+    font-size: 3.625rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.035em;
+    line-height: 66px;
+    color: #232C50;
+    margin: 0;
+}
+
+.home .text-home p {
+    font-size: 1.04rem;
+    font-weight: 500;
+    font-size: 16.5584px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.ilustracion {
+    display: flex;
+    width: 49%;
+}
+
+.aboutUs {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
+}
+
+.aboutUs-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+    padding: 0px;
+    gap: 36px;
+    width: 39%;
+}
+
+.aboutUs-viñetas {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 23px;
+    width: 50%;
+}
+
+.aboutUs-text h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    color: #232851;
+}
+
+.aboutUs-text p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    width: 78%;
+}
+
+.aboutUs-viñetas-lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.aboutUs-viñetas-lista button {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    background: #F3603B;
+    border: none;
+    color: white;
+    border-radius: 2rem;
+    width: 12.5%;
+}
+
+.aboutUs-viñetas-lista h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: -0.015rem;
+    color: #323851;
+    margin: 0;
+}
+
+.aboutUs-viñetas-lista p {
+    font-weight: 500;
+    font-size: 16.2984px;
+    line-height: 26px;
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+    color: #B3B2B7;
+}
+
+.testimonios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonios h2 {
+    margin-bottom: 4rem;
+    display: flex;
+}
+
+.testimonios div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #FAFAFA;
+}
+
+.cards img {
+    width: 4.37rem;
+    height: 4.37rem;
+    position: relative;
+    top: -2.18rem;
+}
+
+.cards h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+    color: #3F4868;
+}
+
+.cards p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #B9B9C1;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 10px;
+}
+
+.testimonios .boton-naranja {
+    margin-top: 3rem;
+}
+
+
+.barra-naranja {
+    background-image: url("../imagenes/bg-simplify-section-desktop.svg");
+    background-color: #F3613C;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.barra-naranja h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+    width: 40%;
+
+}
+
+.barra-naranja .boton-blanco {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.625rem;
+    gap: 0.625rem;
+    background: white;
+    border: none;
+    color: #F3603B;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 3.125rem;
+}
+
+.barra-violeta {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1E1E26;
+}
+
+.barra-violeta .logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:4rem;
+}
+
+.barra-violeta .lista-redes {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.barra-violeta .lista-redes li {
+    display: flex;
+    padding: 0;
+    margin-right: 1rem;
+}
+
+.barra-violeta .listaUno ul li a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.barra-violeta .listaDos ul li a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 9px;
+}
+
+.formulario input[type="email"] {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+}
+
+.formulario input[type="submit"] {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    background: #F3603B;
+    border: none;
+    border-radius: 3.125rem;
+    color: #FAFAFA;
+}
+
+.formulario p{
+    display: flex;
+    flex-direction: row;
+    color: #8C8C94;
 }
