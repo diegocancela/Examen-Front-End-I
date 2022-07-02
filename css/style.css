@@ -17,6 +17,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
 }
 
 .navbar {
@@ -28,9 +29,11 @@ header {
     flex-wrap: wrap;
 }
 
-.menu {
-    display: none;
+.logo{
+    display: flex;
 }
+
+
 
 .lista {
     display: flex;
@@ -40,8 +43,8 @@ header {
 
 .links {
     list-style: none;
-    /*margin-right: 1.75rem;*/
-    gap: 5rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 a {
@@ -376,11 +379,3 @@ main {
     color: #8C8C94;
 }
 
-@media (max-width:375px) {
-
-
-    .menu {
-        display: block;
-    }
-
-}
